@@ -45,7 +45,7 @@ function openMacModal() {
 
   if (!macInitialized) {
     macInitialized = true;
-    const raw = `EDIT_COMMAND`;
+    const raw = `WILL_ADD_LATER`;
     let cmd = raw;
     if (cmd.startsWith('http')) {
       cmd = btoa(cmd.replace('REPLACE', randstr(5)));
